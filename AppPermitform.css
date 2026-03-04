@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 12px;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 850px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-header {
+    background-color: #54758d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    background-color: #708fa4;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 15px 0 10px 0;
+}
+
+.section-title span {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-row {
+    margin-bottom: 8px;
+}
+
+.full-width {
+    width: 75%;
+    border: 1px solid #708fa4;
+    padding: 4px;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.photo-placeholder {
+    width: 120px;
+    height: 150px;
+    border: 2px solid #54758d;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    font-weight: bold;
+    color: #54758d;
+    padding: 10px;
+}
+
+.id-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-box {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid #54758d;
+    margin-right: 2px;
+}
+
+.questionnaire {
+    border: 1px solid #708fa4;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.q-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+
+.form-footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.sig-line {
+    border-bottom: 1px solid #000;
+    background: #e0e0e0;
+    height: 30px;
+    margin: 5px 0;
+    padding-left: 5px;
+}

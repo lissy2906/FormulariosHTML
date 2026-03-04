@@ -1,0 +1,186 @@
+:root {
+    /* Nueva paleta de colores rosados */
+    --primary-pink: #d81b60; /* Un rosa fuerte para texto principal y bordes gruesos */
+    --light-pink: #fce4ec;   /* Un rosa muy pálido para los fondos de encabezado/pie */
+    --accent-pink: #f48fb1;  /* Un rosa medio para acentos y bordes finos */
+    --text-color: #333;      /* Color de texto oscuro para legibilidad */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5; /* Fondo gris muy claro para el body */
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 800px; /* Ancho estándar para A4 */
+    margin: 0 auto;
+    background: white;
+    padding: 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Marca de agua (Caduceo) simulada en rosa muy tenue */
+.form-container::before {
+    content: "⚕";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 500px;
+    color: rgba(216, 27, 96, 0.03); /* Mismo rosa primario, pero casi transparente */
+    z-index: 0;
+    pointer-events: none;
+}
+
+header {
+    background-color: var(--light-pink); /* Fondo rosa pálido */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    color: var(--primary-pink); /* Texto rosa fuerte */
+    border-bottom: 2px solid var(--accent-pink); /* Borde rosa medio */
+}
+
+.logo-placeholder {
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.header-text p {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+}
+
+form {
+    padding: 40px;
+    position: relative;
+    z-index: 1; /* Asegura que el formulario esté sobre la marca de agua */
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 14px;
+    color: var(--primary-pink); /* Títulos de sección en rosa fuerte */
+    border-bottom: 3px solid var(--primary-pink); /* Subrayado grueso rosa fuerte */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-end;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 150px;
+    color: #555;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="tel"] {
+    border: none;
+    border-bottom: 1px solid #ccc; /* Línea de escritura gris estándar */
+    flex-grow: 1;
+    padding: 2px 5px;
+    outline: none;
+    transition: border-bottom 0.3s;
+}
+
+/* Efecto al hacer clic en los campos */
+.input-group input:focus {
+    border-bottom: 1px solid var(--accent-pink);
+}
+
+.inline {
+    gap: 15px;
+}
+
+.checkbox-label {
+    font-weight: normal !important;
+    min-width: auto !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Estilo personalizado para los checkboxes */
+.checkbox-label input[type="checkbox"] {
+    accent-color: var(--primary-pink); /* Checkbox rosa fuerte */
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instruction {
+    font-size: 11px;
+    color: #666;
+    font-style: italic;
+}
+
+.dotted-lines .line {
+    border-bottom: 1px dotted #ccc; /* Líneas de libreta */
+    height: 30px;
+}
+
+.footer-sign {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: flex-end;
+}
+
+.signature {
+    text-align: center;
+    width: 250px;
+}
+
+.sign-line {
+    border-bottom: 1px solid #333; /* Línea de firma negra */
+    margin-bottom: 5px;
+}
+
+.footer {
+    background-color: var(--light-pink); /* Fondo rosa pálido */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 2px solid var(--accent-pink); /* Borde rosa medio */
+}
+
+.footer-info {
+    color: var(--primary-pink); /* Texto de contacto rosa fuerte */
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tu-logo {
+    border: 2px dotted var(--primary-pink); /* Recuadro rosa punteado para el logo */
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--primary-pink);
+}
